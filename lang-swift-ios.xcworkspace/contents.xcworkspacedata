@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:01-The-Basic.playground">
+   </FileRef>
+   <FileRef
+      location = "group:02-Basic-Operators.playground">
+   </FileRef>
+   <FileRef
+      location = "group:03-Strings-and-Characters.playground">
+   </FileRef>
+   <FileRef
+      location = "group:04-Collection-Types.playground">
+   </FileRef>
+   <FileRef
+      location = "group:05-Control-Flow.playground">
+   </FileRef>
+   <FileRef
+      location = "group:06-Functions.playground">
+   </FileRef>
+   <FileRef
+      location = "group:07-Closures.playground">
+   </FileRef>
+   <FileRef
+      location = "group:08-Enumerations.playground">
+   </FileRef>
+   <FileRef
+      location = "group:09-Classes-and-Structures.playground">
+   </FileRef>
+   <FileRef
+      location = "group:10-Properties.playground">
+   </FileRef>
+   <FileRef
+      location = "group:11-Methods.playground">
+   </FileRef>
+   <FileRef
+      location = "group:12-Subscripts.playground">
+   </FileRef>
+   <FileRef
+      location = "group:13-Inheritance.playground">
+   </FileRef>
+   <FileRef
+      location = "group:14-Initialization.playground">
+   </FileRef>
+   <FileRef
+      location = "group:15-Deinitialization.playground">
+   </FileRef>
+   <FileRef
+      location = "group:16-Automatic-Reference-Counting.playground">
+   </FileRef>
+   <FileRef
+      location = "group:17-Optional-Chaining.playground">
+   </FileRef>
+   <FileRef
+      location = "group:18-Error-Handling.playground">
+   </FileRef>
+   <FileRef
+      location = "group:19-Type-Casting.playground">
+   </FileRef>
+   <FileRef
+      location = "group:20-Nested-Types.playground">
+   </FileRef>
+   <FileRef
+      location = "group:21-Extensions.playground">
+   </FileRef>
+   <FileRef
+      location = "group:22-Protocols.playground">
+   </FileRef>
+   <FileRef
+      location = "group:23-Generics.playground">
+   </FileRef>
+   <FileRef
+      location = "group:24-Access-Control.playground">
+   </FileRef>
+</Workspace>
