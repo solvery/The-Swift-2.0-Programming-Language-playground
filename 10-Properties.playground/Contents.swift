@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:属性将值与特定的类、结构体、枚举关联起来。存储属性能够存储常量和变量作为实例的一部分，而计算属性计算（而不存储）一个值。计算属性能存在于类、结构体、枚举中。而存储属性只能存储在类和结构体中。
 
@@ -76,7 +76,7 @@ var square = Rect(origin: Point(x: 0.0, y: 0.0), size: Size(width: 10.0, height:
 let initialSquareCenter = square.center
 square.center = Point(x: 15.0, y: 15.0)
 print("square.origin is now at(\(square.origin.x), \(square.origin.y))")
-var image = UIImage(named: "computedProperties")
+var image = NSImage(named: "computedProperties")
 
 //:**Shorthand Setter Declaration 简洁setter声明** 如果计算属性的set没有定义一个名字，将会有一个默认的newValue名字
 struct AlternativeRect {
@@ -167,7 +167,7 @@ print(SommeEnumeration.computedTypeProperty)
 print(SomeClass.computedTypeProperty)
 
 //例子
-image = UIImage(named: "staticPropertiesVUMeter")
+image = NSImage(named: "staticPropertiesVUMeter")
 struct AudioChannel {
     static let thresholdLevel = 10
     static var maxInputLevelForAllChannels = 0

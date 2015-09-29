@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:构造过程是为了使用某个类、结构体或枚举类型的实例而进行的准备过程。在这个过程中设置每一个存储属性的初始值、执行其他的要求在实例使用之前的，设置或者初始化的任务。   
 //:使用构造器实现初始化方法。与Objective-C不同得，Swift的构造方法，没有返回值。它的主要的角色是保证实例在第一次使用之前，能够被正确得初始化。   
@@ -188,8 +188,8 @@ let centerRect = Rect(center: Point(x: 4.0, y: 4.0), size: Size(width: 3.0, heig
 //: * 指定构造器必须总是向上代理
 //: * 便利构造器必须总是横向代理  
 //:Example 如下图所示
-var image = UIImage(named: "initializerDelegation01")
-image = UIImage(named: "initializerDelegation02")
+var image = NSImage(named: "initializerDelegation01")
+image = NSImage(named: "initializerDelegation02")
 
 //:**Two-Phase Initialization 两段式构造**
 //: 1 初始化所有的存储属性
@@ -214,10 +214,10 @@ image = UIImage(named: "initializerDelegation02")
 //: * 从顶部构造器链一直往下，每个构造器链中类的指定构造器都有机会进一步定制实例。构造器此时可以访问self、修改它的属性并调用实例方法等等。
 //: * 最终，任意构造器链中的便利构造器可以有机会定制实例和使用self。
 //: 例子：阶段1
-image = UIImage(named: "twoPhaseInitialization01")
+image = NSImage(named: "twoPhaseInitialization01")
 
 //:阶段2
-image = UIImage(named: "twoPhaseInitialization02")
+image = NSImage(named: "twoPhaseInitialization02")
 
 //:**Initializer Inheritance and Overriding 构造方法的继承与重写**
 //:Swift默认是不会继承父类的构造方法。如果子类想实现与父类一样得构造方法，可以自己去定义实现。  
@@ -254,7 +254,7 @@ class Food {
         self.init(name: "[Unnamed]")
     }
 }
-image = UIImage(named: "initializersExample01")
+image = NSImage(named: "initializersExample01")
 let namedMeat = Food(name: "Bacon")
 let mysteryMeat = Food()
 
@@ -268,7 +268,7 @@ class RecipeIngredient: Food {
         self.init(name: name, quantity: 1)
     }
 }
-image = UIImage(named: "initializersExample02")
+image = NSImage(named: "initializersExample02")
 let oneMysteryItem = RecipeIngredient()
 let oneBacon = RecipeIngredient(name: "Bacon")
 let sixEggs = RecipeIngredient(name: "Eggs", quantity: 6)
@@ -281,7 +281,7 @@ class ShoppingListItem: RecipeIngredient { // 将继承父类的构造器
         return output
     }
 }
-image = UIImage(named: "initializersExample03")
+image = NSImage(named: "initializersExample03")
 var breakfastList = [
     ShoppingListItem(),
     ShoppingListItem(name: "Bacon"),
@@ -449,7 +449,7 @@ class SomeSubclass: SomeClass {
 //}
 
 //例子
-image = UIImage(named: "checkersBoard")
+image = NSImage(named: "checkersBoard")
 // 数组中的某元素布尔值为true表示对应的是一个黑格，布尔值为false表示对应的是一个白格
 struct Checkerboard {
     let boardColors: [Bool] = {

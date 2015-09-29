@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出
 
-import UIKit
+import AppKit
 
 //:For Loops 循环
 
@@ -55,7 +55,7 @@ print("The loop statements were executed \(index) times")
 //:While Loops While循环，用于在循环次数不知道的情况下
 
 //:While while [condition] { [statements] } [condition]为true会一直执行，直到[condition]为false结束循环
-var image = UIImage(named: "snakesAndLadders")
+var image = NSImage(named: "snakesAndLadders")
 //游戏盘面包括 25 个方格，游戏目标是达到或者超过第 25 个方格；
 //每一轮，你通过掷一个 6 边的骰子来确定你移动方块的步数，移动的路线由上图中横向的虚线所示；
 //如果在某轮结束，你移动到了梯子的底部，可以顺着梯子爬上去；
@@ -116,7 +116,7 @@ if temperatureInFahrenheit <= 32 {
 }
 
 //:Switch 与其他语言不同，不用在每个case中写break，swift只会执行一个case。switch语句必须是完备的。这就是说，每一个可能的值都必须至少有一个 case 分支与之对应。在某些不可能涵盖所有值的情况下，你可以使用默认（default）分支满足该要求，这个默认分支必须在switch语句的最后面。case中的条件可以是多个，并且可以是任意类型
-image = UIImage(named: "switch.jpg")
+image = NSImage(named: "switch.jpg")
 let someCharacter: Character = "e"
 switch someCharacter {
 // 每一个case必须有执行语句，否则会报错,如果多个case执行相同的代码，可以如下将多个case逗号隔开放到一起
@@ -177,7 +177,7 @@ case (-2...2, -2...2):
 default:
     print("(\(somePoint.0), \(somePoint.1)) is outside the box")
 }
-image = UIImage(named: "coordinateGraphSimple")
+image = NSImage(named: "coordinateGraphSimple")
 // 虽然上面如果point为(0,0)的时候，会满足所有的case，但是swift只会选择第一个满足的执行
 
 //:Value Bindings 值绑定 变量只能在case代码块中使用
@@ -192,7 +192,7 @@ case (0, let y):
 case let (x, y):
     print("somewhere else at (\(x), \(y))")
 }
-image = UIImage(named: "coordinateGraphMedium")
+image = NSImage(named: "coordinateGraphMedium")
 
 // Where
 let yetAnotherPoint = (1, -1)
@@ -204,7 +204,7 @@ case let (x, y) where x == -y:
 case let (x, y):
     print("(\(x), \(y)) is just some arbitrary point")
 }
-image = UIImage(named: "coordinateGraphComplex")
+image = NSImage(named: "coordinateGraphComplex")
 
 //:Control Transfer Stratements 控制转移语句 continue break fallthrough return
 

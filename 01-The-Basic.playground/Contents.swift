@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出
 
-import UIKit
+import AppKit
 
 //:Swift提供了基本的C、Objective-C的类型，并且还提供了更加强大的Array、Set、Dictionary。另外还有Objective-C中没有的类型，例如Tuple。Optionals
 

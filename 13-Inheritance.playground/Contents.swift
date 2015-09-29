@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:一个类可以继承（inherit）另一个类的方法（methods），属性（properties）和其它特性。继承的类可以叫做子类，被继承的类可以叫做父类。    
 //:在 Swift 中，类可以调用和访问超类的方法，属性和下标脚本（subscripts），并且可以重写（override）这些方法，属性和下标脚本来优化或修改它们的行为。Swift 会检查你的重写定义在超类中是否有匹配的定义，以此确保你的重写行为是正确的。     

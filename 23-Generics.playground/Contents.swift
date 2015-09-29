@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:泛型代码可以让你写出根据自我需求定义、适用于任何类型的，灵活且可重用的函数和类型。避免重复的代码.泛型是 Swift 强大特征中的其中一个，许多 Swift 标准库是通过泛型代码构建出来的。
 
@@ -68,7 +68,7 @@ test(1, b: 2.5)
 //:**Generic Types 泛型类型**     
 //:Swift 允许你定义你自己的泛型类型。这些自定义类、结构体和枚举作用于任何类型，如同Array和Dictionary的用法。
 // Example Stack 
-var image = UIImage(named: "stackPushPop_2x")
+var image = NSImage(named: "stackPushPop_2x")
 // push pop
 struct IntStack {
     var items = [Int]()
@@ -96,10 +96,10 @@ stackOfStrings.push("uno")
 stackOfStrings.push("dos")
 stackOfStrings.push("tres")
 stackOfStrings.push("cuatro")
-image = UIImage(named: "stackPushedFourStrings_2x")
+image = NSImage(named: "stackPushedFourStrings_2x")
 
 let fromTheTop = stackOfStrings.pop()
-image = UIImage(named: "stackPoppedOneString_2x")
+image = NSImage(named: "stackPoppedOneString_2x")
 
 //:**Extending a Generic Type 扩展一个泛型类型**    
 //:当你扩展一个泛型类型的时候，你并不需要在扩展的定义中提供类型参数列表。更加方便的是，原始类型定义中声明的类型参数列表在扩展里是可以使用的，并且这些来自原始类型中的参数名称会被用作原始定义中类型参数的引用。

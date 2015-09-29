@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:类型转换可以判断实例的类型，也可以将实例看做是其父类或者子类的实例。还可以判断是否实现了一个协议
 

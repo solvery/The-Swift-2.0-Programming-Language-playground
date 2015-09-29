@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:方法是与某些特定类型相关联的函数。类、结构体、枚举都可以定义实例方法、类型方法。类型方法类似Objective-C中的类方法。不同的是Swift中结构体和枚举也能定义方法。
 

@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:类、结构体、枚举能够定义下标脚本，下标脚本是一种快捷访问、设置集合、列表、队列的元素的方式。使用下标脚本的索引设置和获取值，不需要再调用实例的特定的赋值和访问方法。对于同一个目标可以定义多个下标脚本，通过索引值类型的不同来进行重载，下标脚本可以定义多个入参的下标脚本满足自定义类型的需求。
 //这个建议看一下Alamofire源代码，里面使用了下标脚本存储每次请求的delegate
@@ -69,10 +69,10 @@ struct Matrix {
 }
 
 var matrix = Matrix(rows: 2, columns: 2)
-var image = UIImage(named: "subscriptMatrix01")
+var image = NSImage(named: "subscriptMatrix01")
 matrix[0, 1] = 1.5
 matrix[1, 0] = 3.2
-image = UIImage(named: "subscriptMatrix02")
+image = NSImage(named: "subscriptMatrix02")
 
 // 在下标脚本中使用了assert去校验索引是否合法 下面会报错
 //let someValue = matrix[2, 2]

@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出
 
-import UIKit
+import AppKit
 
 //:闭包是自包含的函数代码块，可以在代码中被传递和使用。 Swift 中的闭包与 C 和 Objective-C 中的代码块（blocks）以及其他一些编程语言中的 lambdas 函数比较相似。
 //:闭包可以捕获和存储其所在上下文中任意常量和变量的引用。 这就是所谓的闭合并包裹着这些常量和变量，俗称闭包。Swift 会为您管理在捕获过程中涉及到的所有内存操作。
@@ -35,7 +35,7 @@ func backwards(s1: String, s2: String) -> Bool {
 var reversed = names.sort(backwards)
 
 //:**Closure Expression Syntax 闭包表达式语法** 能够使用常量、变量、inout参数，但是不能参数不能提供默认值。在参数末尾也可以使用可变参数，元组也可以作为参数或者返回值
-var image = UIImage(named: "ClosureExpressionSyntax")
+var image = NSImage(named: "ClosureExpressionSyntax")
 reversed = names.sort({ (s1: String, s2: String) -> Bool in
     return s1 > s2
 })

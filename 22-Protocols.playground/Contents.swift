@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:协议(Protocol)用于定义完成某项任务或功能的方法、属性和其它要求的地方。协议能被类、结构体、枚举遵循，提供属于自己的实现。
 

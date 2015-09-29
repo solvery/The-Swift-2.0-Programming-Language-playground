@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:Swift 使用自动引用计数（ARC）机制来跟踪和管理你的应用程序的内存。引用计数仅仅应用于类的实例。结构体和枚举类型是值类型，不是引用类型，也不是通过引用的方式存储和传递
 
@@ -56,15 +56,15 @@ var john: Person?
 var number73: Apartment?
 john = Person(name: "John Appleseed")
 number73 = Apartment(number: 73)
-var image = UIImage(named: "referenceCycle01_2x")
+var image = NSImage(named: "referenceCycle01_2x")
 
 john!.apartment = number73
 number73!.tenant = john
-image = UIImage(named: "referenceCycle02_2x")
+image = NSImage(named: "referenceCycle02_2x")
 
 john = nil
 number73 = nil
-image = UIImage(named: "referenceCycle03_2x")
+image = NSImage(named: "referenceCycle03_2x")
 
 //**Resolving Strong Reference Cycles Between Class Instances 解决实例之间的循环强引用**    
 //:Swift 提供了两种办法用来解决你在使用类的属性时所遇到的循环强引用问题：弱引用（weak reference）和无主引用（unowned reference）。
@@ -96,14 +96,14 @@ secondNumber73 = SecondApartment(number: 73)
 
 secondJohn!.apartment = secondNumber73
 secondNumber73!.tenant = secondJohn
-image = UIImage(named: "weakReference01_2x")
+image = NSImage(named: "weakReference01_2x")
 
 // 断开secondJoin实例的引用
 secondJohn = nil
-image = UIImage(named: "weakReference02_2x")
+image = NSImage(named: "weakReference02_2x")
 
 secondNumber73 = nil
-image = UIImage(named: "weakReference03_2x")
+image = NSImage(named: "weakReference03_2x")
 
 //:**Unowned References 无主引用**
 //:和弱引用类似，无主引用不会牢牢保持住引用的实例。和弱引用不同的是，无主引用是永远有值的。因此，无主引用总是被定义为非可选类型（non-optional type）。使用unowned关键字
@@ -130,10 +130,10 @@ var customer: Customer?
 customer = Customer(name: "John Appleseed")
 customer!.card = CreditCard(number: 1234_5678_9012_3456, customer: customer!)
 // 下图中join == 代码中的customer
-image = UIImage(named: "unownedReference01_2x")
+image = NSImage(named: "unownedReference01_2x")
 
 customer = nil
-image = UIImage(named: "unownedReference02_2x")
+image = NSImage(named: "unownedReference02_2x")
 
 //:**Unowned References and Implicitly Unwrapped Optional Properties 无主引用以及隐式解析可选属性**  
 //Person 和 Apartment 的例子展示了两个属性的值都允许为 nil ，并会潜在的产生循环强引用。这种场景最适合用弱引用来解决。
@@ -191,7 +191,7 @@ class HTMLElement {
 var paragraph: HTMLElement? = HTMLElement(name: "p", text: "hello, world")
 print(paragraph!.asHTML())
 
-image = UIImage(named: "closureReferenceCycle01_2x")
+image = NSImage(named: "closureReferenceCycle01_2x")
 // 由于asHTML捕获了self，即使设置为nil 也不会被释放
 paragraph = nil
 
@@ -238,7 +238,7 @@ class AnotherHTMLElement {
 var anotherParagraph: AnotherHTMLElement? = AnotherHTMLElement(name: "p", text: "hello, world")
 print(anotherParagraph!.asHTML())
 anotherParagraph = nil
-image = UIImage(named: "closureReferenceCycle02_2x")
+image = NSImage(named: "closureReferenceCycle02_2x")
 
 
 

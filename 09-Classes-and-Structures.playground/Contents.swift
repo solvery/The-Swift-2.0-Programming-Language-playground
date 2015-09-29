@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
-import UIKit
+import AppKit
 
 //:类和结构体是人们构建代码所用的一种通用且灵活的代码块你可以使用和定义常量、变量和函数一样的语法，去给你的类定义属性和方法、增加类的功能。与Objective-C不同，声明和实现都在同一个文件中（也可以理解成没有声明文件），那些属性和方法能够被外部所见，也是在该文件内控制
 

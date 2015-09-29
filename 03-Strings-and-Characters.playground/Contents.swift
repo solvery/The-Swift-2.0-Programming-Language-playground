@@ -6,7 +6,7 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出
 
-import UIKit
+import AppKit
 
 //:字符串字面量 使用""包裹起来
 let someString = "Some string literal value"
@@ -150,19 +150,19 @@ quotation.hasSuffix(".")
 
 //:Unicode Representations of Strings
 let dogString = "Dog‼🐶"
-var image = UIImage(named: "String.utf8")
+var image = NSImage(named: "String.utf8")
 for codeUnit in dogString.utf8 {
     print("\(codeUnit) ", terminator: "")
 }
 print("")
 
-image = UIImage(named: "String.utf16")
+image = NSImage(named: "String.utf16")
 for codeUnit in dogString.utf16 {
     print("\(codeUnit) ", terminator: "")
 }
 print("")
 // Unicode Scalar Representation
-image = UIImage(named: "String.utf32")
+image = NSImage(named: "String.utf32")
 for scalar in dogString.unicodeScalars {
     print("\(scalar.value) ", terminator: "")
 }

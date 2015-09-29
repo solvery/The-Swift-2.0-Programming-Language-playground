@@ -6,10 +6,10 @@
 //:
 //:本人菜鸟一个，如果哪里有错误，欢迎指出
 
-import UIKit
+import AppKit
 
 //:Array:存储有序的值 Set:存储无序的唯一的值 Dictionary:存储无序的key-value键值对。在Swift中，集合明确的知道它能够存贮的值的类型，所以如果插入一个错误的类型，将会错误。
-var image = UIImage(named: "collectionTypes")
+var image = NSImage(named: "collectionTypes")
 
 //:Mutability of Collections 
 // 使用var、let 区分其是否可变
@@ -124,7 +124,7 @@ for genre in favoriteGenres.sort() {
 }
 
 //:集合操作 下图展示了集合操作
-image = UIImage(named: "SetOperations")
+image = NSImage(named: "SetOperations")
 
 let oddDigits: Set = [1, 3, 5, 7, 9]
 let evenDigits: Set = [0, 2, 4, 6, 8]
@@ -145,7 +145,7 @@ oddDigits.exclusiveOr(singleDigitPrimeNumbers).sort()
 //使用isStrictSubsetOf(_:)或者isStrictSupersetOf(_:)方法来判断一个集合是否是另外一个集合的子集合或者父集合,并且和特定集合不相等。
 //使用isDisjointWith(_:)方法来判断两个集合是否不含有相同的值。
 
-image = UIImage(named: "setEulerDiagram")
+image = NSImage(named: "setEulerDiagram")
 
 let houseAnimals: Set = ["🐶", "🐱"]
 let farmAnimals: Set = ["🐮", "🐔", "🐑", "🐶", "🐱"]
