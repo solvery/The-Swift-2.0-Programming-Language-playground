@@ -1,14 +1,7 @@
 //:### 02-Basic Operators
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出
 
 import AppKit
 
-//:运算符分为一元、二元、三元。一元 + - ++ --  二元 + - % 三元 ?:。受运算符影响的值叫操作数
 
 // 赋值运算符= 没有返回值
 let b = 10
@@ -57,7 +50,7 @@ if name == "world" {
     print("hello world")
 }
 
-//:三目运算符 question ? answer1 : answer2 --> if question { answer1 } else { answer2 } 过渡使用可能造成代码难以阅读
+//:三目运算符  ? :
 let hasHeader = true
 let frameY = hasHeader ? 50 : 10
 

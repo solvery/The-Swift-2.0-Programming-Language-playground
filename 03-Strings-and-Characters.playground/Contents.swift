@@ -1,14 +1,8 @@
 //:### 03-Strings and Characters
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出
 
 import AppKit
 
-//:字符串字面量 使用""包裹起来
+//:字符串字面量，不同于Objective-C 的  @""
 let someString = "Some string literal value"
 
 //:初始化一个空字符串
@@ -21,14 +15,14 @@ if emptyString.isEmpty {
     print("Nothing to see here")
 }
 
-// 字符串的可变性 不同于Objective-C Swift使用var、let对应可变、不可变； Objective-C NSString/NSMutableString
+// 字符串的可变性 
+// 不同于Objective-C Swift使用var、let对应可变、不可变； Objective-C NSString/NSMutableString
 var variableString = "Horse"
 variableString += " and carriage"
-
 let constantString = "Highlander"
 //constantString += " and another Highlander"  // 常量不能改变 error
 
-//:Swift 的String类型是值类型。 如果您创建了一个新的字符串，那么当其进行常量、变量赋值操作或在函数/方法中传递时，会进行值拷贝。 任何情况下，都会对已有字符串值创建新副本，并对该新副本进行传递或赋值操作。在实际编译时，Swift 编译器会优化字符串的使用，使实际的复制只发生在绝对必要的情况下，这意味着您将字符串作为值类型的同时可以获得极高的性能。
+//:Swift 的String类型是值类型。 如果您创建了一个新的字符串，那么当其进行常量、变量赋值操作或在函数/方法中传递时，会进行值拷贝。
 
 //:使用字符（Working with Characters）
 for character in "Dog!🐶".characters {
@@ -57,7 +51,7 @@ welcome.append(exclamationMark)
 let multiplier = 3
 let message = "\(multiplier) times 2.5 is \(Double(multiplier) * 2.5)"
 
-//:Unicode 标量 (Unicode Scalars) 介绍了一些Unicode编码的知识 自己百度吧
+//:Unicode 标量 (Unicode Scalars)
 // String字面值中的一些特殊字符 \0 \\ \n \r \" \' 标量使用u{n}表示
 let wiseWords = "\"Imagination is more important than knowledge\" - Einstein"
 let dollarSign = "\u{24}"

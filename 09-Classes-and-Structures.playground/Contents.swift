@@ -1,30 +1,10 @@
 //:### 09-Classes and Structures 类和结构体
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
 import AppKit
 
-//:类和结构体是人们构建代码所用的一种通用且灵活的代码块你可以使用和定义常量、变量和函数一样的语法，去给你的类定义属性和方法、增加类的功能。与Objective-C不同，声明和实现都在同一个文件中（也可以理解成没有声明文件），那些属性和方法能够被外部所见，也是在该文件内控制
+// 与Objective-C不同，声明和实现都在同一个文件中（也可以理解成没有声明文件），那些属性和方法能够被外部所见，也是在该文件内控制
 
-//:**Comparing Classes and Structures 类和结构体比较**
-// 相同点
-// * 定义属性去存储值
-// * 定义方法，提供功能
-// * 定义角标，提供使用角标访问值
-// * 定义初始化方法，初始化状态
-// * 通过扩展以增加默认实现外的功能
-// * 实现协议，提供标准的功能
-
-// 类有而结构体没有的功能:
-// * 继承允许一个类继承另一个类的特征
-// * 类型转换允许在运行时检查和转换一个类实例的类型
-// * 解构器允许一个类实例释放任何其所被分配的资源
-// * 引用计数允许对一个类的多次引用
-
+ 
 //:**Definition Syntax**
 // 类名 结构体 名字 单词首字母大写 属性、方法 第一个单词的首字母小写，其余单词首字母大写
 class SomeClass {
@@ -61,7 +41,11 @@ print("The width of someVideoMode is \(someVideoMode.resolution.width)")
 //:**Memberwise Initializers for Structure Types 结构体类型的成员逐一构造器** 所有结构体都有一个自动生成的成员逐一构造器，用于初始化新结构体实例中成员的属性。
 let vga = Resolution(width: 6400, height: 480)
 
-//**Structures and Enumerations Are Value Types 结构体和枚举是值类型** 值类型是一种在被赋值给变量或常量的时候或者做为参数传递给函数的时候，是值拷贝的一种类型。在 Swift 中，所有的基本类型：整数（Integer）、浮点数（floating-point）、布尔值（Booleans）、字符串（string)、数组（array）和字典（dictionaries），都是值类型，并且都是以结构体的形式在后台所实现。
+//**Structures and Enumerations Are Value Types 结构体和枚举是值类型** 
+// 值类型是一种在被赋值给变量或常量的时候或者做为参数传递给函数的时候，是值拷贝的一种类型。
+// 在 Swift 中，所有的基本类型：整数（Integer）、浮点数（floating-point）、布尔值（Booleans）、字符串（string)、数组（array）和字典（dictionaries），都是值类型，
+// **并且都是以结构体的形式在后台所实现。**
+
 // Example 值拷贝
 let hd = Resolution(width: 1920, height: 1080)
 var cinema = hd

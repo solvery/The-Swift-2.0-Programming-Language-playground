@@ -1,10 +1,4 @@
 //:### 07-Closures 闭包
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出
 
 import AppKit
 

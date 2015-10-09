@@ -1,10 +1,4 @@
 //:### 05-Control Flow
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出
 
 import AppKit
 
@@ -37,10 +31,7 @@ for (animalName, legCount) in numberOfLegs {
 }
 
 //:For for [initialization]; [condition]; [increment] {} 去掉了if后面的小括号，但是大括号是不能省略的
-//执行顺序
-//1 循环首次启动时，初始化表达式（initialization expression）被调用一次，用来初始化循环所需的所有常量和变量。
-//2 条件表达式（condition expression）被调用，如果表达式调用结果为false，循环结束，继续执行for循环关闭大括号 （}）之后的代码。如果表达式调用结果为true，则会执行大括号内部的代码（statements）。
-//3 执行所有语句（statements）之后，执行递增表达式（increment expression）。通常会增加或减少计数器的值，或者根据语句（statements）输出来修改某一个初始化的变量。当递增表达式运行完成后，重复执行第 2 步，条件表达式会再次执行。
+// 执行所有语句（statements）之后，执行递增表达式（increment expression）。
 for var index = 0; index < 3; ++index {
     print("index is \(index)")
 }
@@ -124,10 +115,10 @@ case "a", "e", "i", "o", "u":
     print("\(someCharacter) is a vowel")
 case "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "n", "p", "q", "r", "s", "t", "v", "w", "x", "x", "z":
     print("\(someCharacter) is a consonant")
-default: // default在switch中一般不能省略，只有完全确定了包含了所有的可能才能省略，比如下面的枚举
+default:
     print("\(someCharacter) is not a vowel or a consonant")
 }
-
+// default在switch中一般不能省略，只有完全确定了包含了所有的可能才能省略，比如下面的枚举
 enum XX {
     case a
     case b
@@ -208,7 +199,7 @@ image = NSImage(named: "coordinateGraphComplex")
 
 //:Control Transfer Stratements 控制转移语句 continue break fallthrough return
 
-//:Continue continue语句告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。就好像在说“本次循环迭代我已经执行完了”，但是并不会离开整个循环体。
+//:Continue continue语句告诉一个循环体立刻停止本次循环迭代，重新开始下次循环迭代。 
 
 let puzzleInput = "great minds think alike"
 var puzzleOutput = ""

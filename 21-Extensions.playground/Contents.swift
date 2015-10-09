@@ -1,14 +1,9 @@
 //:### 21-Extensions 扩展
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
 import AppKit
 
-//:展就是向一个已有的类、结构体或枚举类型添加新功能（functionality）。这包括在没有权限获取原始源代码的情况下扩展类型的能力（即逆向建模）。扩展和 Objective-C 中的分类（categories）类似。Swift中协议也支持扩展
+
+// 扩展和 Objective-C 中的分类（categories）类似。
 //:在Swift中扩展能够：    
 //:* 添加计算型属性和计算静态属性
 //:* 定义实例方法和类型方法
@@ -137,11 +132,11 @@ func printIntegerKinds(numbers: [Int]) {
     for number in numbers {
         switch number.kind {
         case .Negative:
-            print("- ", appendNewline: false)
+            print("- ", terminator: "")
         case .Zero:
-            print("0 ", appendNewline: false)
+            print("0 ", terminator: "")
         case .Positive:
-            print("+ ", appendNewline: false)
+            print("+ ", terminator: "")
         }
     }
     print("")

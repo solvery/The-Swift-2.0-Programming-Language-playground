@@ -1,10 +1,5 @@
 //:### 16-Automatic Reference Counting 自动引用计数
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
+
 
 import AppKit
 
@@ -12,7 +7,7 @@ import AppKit
 
 //:**How ARC Works 自动引用计数的工作机制**   
 //:当你每次创建一个类的新的实例的时候，ARC 会分配一大块内存用来储存实例的信息。内存中会包含实例的类型信息，以及这个实例所有相关属性的值。
-//:此外，当实例不再被使用时，ARC 释放实例所占用的内存，并让释放的内存能挪作他用。这确保了不再被使用的实例，不会一直占用内存空间。
+
 
 //:**ARC in Action ARC实战**   
 class AnotherPerson {

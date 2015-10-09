@@ -1,14 +1,11 @@
 //:### 04-Collection Types
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出
+
 
 import AppKit
 
-//:Array:存储有序的值 Set:存储无序的唯一的值 Dictionary:存储无序的key-value键值对。在Swift中，集合明确的知道它能够存贮的值的类型，所以如果插入一个错误的类型，将会错误。
+//:Array:存储有序的值 
+// Set:存储无序的唯一的值 
+// Dictionary:存储无序的key-value键值对。
 var image = NSImage(named: "collectionTypes")
 
 //:Mutability of Collections 
@@ -34,7 +31,8 @@ var sixDoubles = threeDoubles + anotherThreeDoubles
 
 // 使用数组字面量创建数组
 var shoppingList: [String] = ["Eggs", "Milk"]
-var anotherShoppingList = ["Eggs", "Milk"] // 字面量初始化的时候 在存储类型一致的情况下，可以省略类型，因为能够推断出来
+var anotherShoppingList = ["Eggs", "Milk"]
+// 字面量初始化的时候 在存储类型一致的情况下，可以省略类型，因为能够推断出来
 
 // 访问修改Array
 // 元素个数

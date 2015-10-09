@@ -1,14 +1,9 @@
 //:### 08-Enumerations 枚举
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出。这些Playground都放在了Github上，欢迎下载。如果你感觉还不错，star一下。地址：<https://github.com/mengxiangyue/The-Swift-2.0-Programming-Language-playground>
 
 import AppKit
 
-//:枚举定义了一个通用类型的一组相关的值，使你可以在你的代码中以一个安全的方式来使用这些值。在 Swift 中，枚举类型是一等（first-class）类型。枚举中有许多原来只有类才有的特性，例如计算属性、实例方法、初始化方法、实现协议等
+//:枚举定义了一个通用类型的一组相关的值，使你可以在你的代码中以一个安全的方式来使用这些值。在 Swift 中，枚举类型是一等（first-class）类型。
+// 枚举中有许多原来只有类才有的特性，例如计算属性、实例方法、初始化方法、实现协议等
 
 //:**Enumeration Syntax 枚举语法**
 enum SomeEnumeration {

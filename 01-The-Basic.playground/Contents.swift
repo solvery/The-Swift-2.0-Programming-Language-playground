@@ -1,14 +1,6 @@
 //:### 01-The Basic
-//:
-//:孟祥月　[http://blog.csdn.net/mengxiangyue](http://blog.csdn.net/mengxiangyue)
-//:
-//: ----
-//:
-//:本人菜鸟一个，如果哪里有错误，欢迎指出
 
 import AppKit
-
-//:Swift提供了基本的C、Objective-C的类型，并且还提供了更加强大的Array、Set、Dictionary。另外还有Objective-C中没有的类型，例如Tuple。Optionals
 
 //:常量和变量（Constants and Variables）
 let maximumNumberOfLoginAttempts = 10
@@ -21,7 +13,7 @@ var welcomeMessage: String
 welcomeMessage = "Hello"
 var red, green, blue: Double
 
-// 变量名可以是任意字符 包括Unicode字符，不能包括空格、数学符号、箭头、保留的（或者非法的）Unicode 码位，连线与制表符。也不能以数字开头，但是可以在常量与变量名的其他地方包含数字。
+// 变量名可以是任意字符 包括Unicode字符
 let π = 3.14159
 let 你好 = "你好世界"
 let 🐶🐮 = "dogcow"
@@ -45,14 +37,14 @@ but written over multiple lines */
 /* bbb  */
 ----aaa */
 
-//: 分号 与其他大部分编程语言不同，Swift 并不强制要求你在每条语句的结尾处使用分号（;），当然，你也可以按照你自己的习惯添加分号。有一种情况下必须要用分号，即你打算在同一行内写多条独立的语句
+//: 分号
 let cat = "🐱"; print(cat)
 
-//: 整数 提供了8，16，32和64位的有符号和无符号整数类型 Int8 UInt8，另外提供了一Int类型，32位平台=Int32，64位平台=Int64
+//: 整数
 let minValue = UInt8.min  // minValue 为 0，是 UInt8 类型的最小值
 let maxValue = UInt8.max  // maxValue 为 255，是 UInt8 类型的最大值
 
-// 浮点数 Double表示64位浮点数，Float表示32位浮点数 自动推断为Double
+// 浮点数
 let float = 222.3
 float is Double
 float is Float
@@ -71,7 +63,7 @@ let hexadecimalInteger = 0x11     // 十六进制的17
 // 1.25e-2 表示 1.25 × 10^-2，等于 0.0125
 1.25e-2
 
-// 可读性增强  只能是下划线
+//  下划线
 let paddedDouble = 000123.456
 let oneMillion = 1_000_000
 let justOverOneMillion = 1_000_000.000_000_1
@@ -96,31 +88,26 @@ var maxAmplitudeFound = AudioSample.min
 //:布尔值 Bool true false not YES NO
 //if 1 {} // error
 
-//:Tuples 元组 把多个值组合成一个复合值。元组内的值可以是任意类型，并不要求是相同类型。
+//:Tuples 元组  任意类型
 let http404Error = (404, "Not Found")
 // http404Error 的类型是 (Int, String)，值是 (404, "Not Found")
 // 获取元组的值
 let (statusCode, statusMessage) = http404Error
 print("The status code is \(statusCode)")
-// 输出 "The status code is 404"
+
 print("The status message is \(statusMessage)")
-// 输出 "The status message is Not Found"
 
 let (justTheStatusCode, _) = http404Error
 print("The status code is \(justTheStatusCode)")
 
 // 使用索引
 print("The status code is \(http404Error.0)")
-// 输出 "The status code is 404"
 print("The status message is \(http404Error.1)")
-// 输出 "The status message is Not Found"
 
 // 在定义元组的时候给单个元素命名
 let http200Status = (statusCode: 200, description: "OK")
 print("The status code is \(http200Status.statusCode)")
-// 输出 "The status code is 200"
-print("The status message is \(http200Status.description)")
-// 输出 "The status message is OK"
+ print("The status message is \(http200Status.description)")
 
 // 作为一个多参数的返回值 元组十分合适
 
@@ -135,7 +122,9 @@ serverResponseCode = nil
 
 var surveyAnswer: String?
 // 没有提供初始值的optional variable，默认设置为nil
-// nil 在swift、Objective-C不同。在Objective-C中，nil是一个指向不存在的对象的指针，在Swift中，nil指向一个缺失的值
+// nil 在swift、Objective-C不同。
+// 在Objective-C中，nil是一个指向不存在的对象的指针，
+// 在Swift中，nil指向一个缺失的值
 
 //:if 语句以及强制解析
 if convertedNumber != nil {
@@ -143,7 +132,6 @@ if convertedNumber != nil {
     // 确定有值 使用! 强制解析使用
     print("\(possibleNumber) has an integer value of \(convertedNumber!)")
 }
-// 输出 "123 has an integer value of 123"
 
 //:可选绑定（optional binding）
 // let var
@@ -157,11 +145,9 @@ if let a = a1, b = b1 {} // if中可以写入多个可选绑定
 //:隐式解析可选类型
 let possibleString: String? = "An optional string."
 print(possibleString!) // 需要惊叹号来获取值
-// 输出 "An optional string."
-let assumedString: String! = "An implicitly unwrapped optional string."
+ let assumedString: String! = "An implicitly unwrapped optional string."
 print(assumedString)  // 不需要感叹号
-// 输出 "An implicitly unwrapped optional string."
-
+ 
 //:错误处理
 func canThrowanError() throws {
 }
